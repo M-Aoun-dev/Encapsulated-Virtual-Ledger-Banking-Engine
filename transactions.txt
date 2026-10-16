@@ -1,0 +1,21 @@
+1111|OpeningDeposit|120000.00|120000.00|Transaction|Initial account deposit
+1111|Deposit|122000.00|242000.00|Transaction|Cash deposit
+1112|OpeningDeposit|130000.00|130000.00|Transaction|Initial account deposit
+1111|Withdrawal|122222.00|119778.00|Transaction|Cash withdrawal
+1111|TransferOut|50000.00|69778.00|Transaction|Transfer to account 1112
+1112|TransferIn|50000.00|180000.00|Transaction|Transfer from account 1111
+1112|AccountClosureTransferOut|180000.00|0.00|Transaction|Balance transferred to account 1111
+1111|AccountClosureTransferIn|180000.00|249778.00|Transaction|Balance received from account 1112
+1112|OpeningDeposit|10000.00|10000.00|Transaction|Initial account deposit
+1112|AccountClosureWithdrawal|5000.00|5000.00|Transaction|Money withdrawn before account deletion
+1112|AccountClosureTransferOut|5000.00|0.00|Transaction|Balance transferred to account 1111
+1111|AccountClosureTransferIn|5000.00|254778.00|Transaction|Balance received from account 1112
+1001|OpeningDeposit|120000.00|120000.00|Transaction|Initial account deposit
+1002|OpeningDeposit|10000.00|10000.00|Transaction|Initial account deposit
+1001|Deposit|12000.00|132000.00|Transaction|Cash deposit
+1002|TransferOut|100.00|9900.00|Transaction|Transfer to account 1001
+1001|TransferIn|100.00|132100.00|Transaction|Transfer from account 1002
+1002|AccountClosureTransferOut|9900.00|0.00|Transaction|Balance transferred to account 1001
+1001|AccountClosureTransferIn|9900.00|142000.00|Transaction|Balance received from account 1002
+1001|AccountClosureTransferOut|142000.00|0.00|Transaction|Balance transferred to new account 1110
+1110|AccountOpeningTransferIn|142000.00|142000.00|Transaction|Balance received from closed account 1001
